@@ -54,6 +54,13 @@
               }
             }
           ]
+          ,"relatedLocations": [
+            {
+              "physicalLocation": {
+
+              }
+            }
+          ]
         }
         ,{
           "ruleId": "V591",
