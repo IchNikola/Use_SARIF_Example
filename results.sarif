@@ -54,14 +54,6 @@
               }
             }
           ]
-          ,"relatedLocations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { },
-                "region": {  }
-              }
-            }
-          ]
         }
         ,{
           "ruleId": "V591",
