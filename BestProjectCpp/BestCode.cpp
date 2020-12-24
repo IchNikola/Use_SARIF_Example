@@ -7,14 +7,6 @@ int main()
     a = a;
 } 
 
-int DoSomething(int a)
-{
-    return a * rand() / 10;
-}
+int ff(int a, int b) {
 
-int ff(int a, int b) 
-{
-    a = DoSomething(a);
-    b = DoSomething(a);
-    return a + b;
 }
