@@ -7,14 +7,9 @@ int main()
     a = a;
 } 
 
-int DoSomething(int a)
+void ff(float array[3])
 {
-    return a * rand() / 10;
-}
-
-int ff(int a, int b) 
-{
-    a = DoSomething(a);
-    b = DoSomething(a);
-    return a + b;
+    size_t n = sizeof(array) / sizeof(array[0]);
+    for (size_t i = 0; i != n; i++)
+        array[i] = 1.0f;
 }
