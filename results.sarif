@@ -56,7 +56,6 @@
           ]
           ,"relatedLocations": [
             {
-              "id": 0,
               "message": {
                 "text": "The previous declaration of 'index' was here."
               },
