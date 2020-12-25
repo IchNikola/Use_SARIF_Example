@@ -7,6 +7,13 @@ int main()
     a = a;
 } 
 
-int ff(int a, int b) {
+int SkipParenthesize(int a)
+{
+    return a * rand() / 100;
+}
 
+void ff(int a, int b)
+{
+    a = SkipParenthesize(a);
+    b = SkipParenthesize(a);
 }
