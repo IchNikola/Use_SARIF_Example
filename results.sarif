@@ -6,24 +6,49 @@
        "tool": {
         "driver": {
           "name": "PVS-Studio",
-          "semanticVersion": "7.11.44211.2704",
+          "semanticVersion": "7.11.0.1",
+          "informationUri": "https://viva64.com",
           "rules": [
             {
               "id": "V570",
-              "name": "Rule V570",
-              "help": { "text": "https://www.viva64.com/en/w/v570/" }
+              "name": "RuleV570",
+              "help": { "text": "https://www.viva64.com/en/w/v570/" },
+              "helpUri": "https://www.viva64.com/en/w/v570/"
               ,"properties": { "tags": [ "security", "external/cwe/cwe-480" ] }
             }
             ,{
-              "id": "V763",
-              "name": "Rule V763",
-              "help": { "text": "https://www.viva64.com/en/w/v763/" }
+              "id": "V547",
+              "name": "RuleV547",
+              "help": { "text": "https://www.viva64.com/en/w/v547/" },
+              "helpUri": "https://www.viva64.com/en/w/v547/"
+              ,"properties": { "tags": [ "security", "external/cwe/cwe-571" ] }
+            }
+            ,{
+              "id": "V571",
+              "name": "RuleV571",
+              "help": { "text": "https://www.viva64.com/en/w/v571/" },
+              "helpUri": "https://www.viva64.com/en/w/v571/"
+              ,"properties": { "tags": [ "security", "external/cwe/cwe-571" ] }
+            }
+            ,{
+              "id": "V1001",
+              "name": "RuleV1001",
+              "help": { "text": "https://www.viva64.com/en/w/v1001/" },
+              "helpUri": "https://www.viva64.com/en/w/v1001/"
+              ,"properties": { "tags": [ "security", "external/cwe/cwe-563" ] }
             }
             ,{
               "id": "V591",
-              "name": "Rule V591",
-              "help": { "text": "https://www.viva64.com/en/w/v591/" }
+              "name": "RuleV591",
+              "help": { "text": "https://www.viva64.com/en/w/v591/" },
+              "helpUri": "https://www.viva64.com/en/w/v591/"
               ,"properties": { "tags": [ "security", "external/cwe/cwe-393" ] }
+            }
+            ,{
+              "id": "V2542",
+              "name": "RuleV2542",
+              "help": { "text": "https://www.viva64.com/en/w/v2542/" },
+              "helpUri": "https://www.viva64.com/en/w/v2542/"
             }
           ]
         }
@@ -36,32 +61,58 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "BestProjectCpp/BestCode.cpp"},
+                "artifactLocation": { "uri": "D:/Missions/Article SARIF/Use_SARIF_Example/BestProjectCpp/BestCode.cpp"},
                 "region": { "startLine": 7, "endLine": 7, "startColumn": 1, "endColumn": 2147483647 }
               }
             }
           ]
         }
         ,{
-          "ruleId": "V763",
-          "message": { "text": "Parameter 'b' is always rewritten in function body before being used." },
+          "ruleId": "V547",
+          "message": { "text": "Expression 'a == 6' is always true." },
           "level": "error",
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "BestProjectCpp/BestCode.cpp"},
-                "region": { "startLine": 18, "endLine": 18, "startColumn": 1, "endColumn": 2147483647 }
+                "artifactLocation": { "uri": "D:/Missions/Article SARIF/Use_SARIF_Example/BestProjectCpp/BestCode.cpp"},
+                "region": { "startLine": 14, "endLine": 14, "startColumn": 1, "endColumn": 2147483647 }
+              }
+            }
+          ]
+        }
+        ,{
+          "ruleId": "V571",
+          "message": { "text": "Recurring check. The 'if (a == 6)' condition was already verified in line 12." },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "D:/Missions/Article SARIF/Use_SARIF_Example/BestProjectCpp/BestCode.cpp"},
+                "region": { "startLine": 14, "endLine": 14, "startColumn": 1, "endColumn": 2147483647 }
               }
             }
           ]
           ,"relatedLocations": [
-            {
               "message": {
                 "text": "The previous declaration of 'index' was here."
               },
+            {
               "physicalLocation": {
-                "artifactLocation": { "uri": "BestProjectCpp/BestCode.cpp"},
-                "region": { "startLine": 11, "endLine": 11, "startColumn": 1, "endColumn": 2147483647 }
+                "artifactLocation": { "uri": "D:/Missions/Article SARIF/Use_SARIF_Example/BestProjectCpp/BestCode.cpp"},
+                "region": { "startLine": 12, "endLine": 12, "startColumn": 1, "endColumn": 2147483647 }
+              }
+            }
+          ]
+        }
+        ,{
+          "ruleId": "V1001",
+          "message": { "text": "The 'b' variable is assigned but is not used by the end of the function." },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "D:/Missions/Article SARIF/Use_SARIF_Example/BestProjectCpp/BestCode.cpp"},
+                "region": { "startLine": 29, "endLine": 29, "startColumn": 1, "endColumn": 2147483647 }
               }
             }
           ]
@@ -73,7 +124,20 @@
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": { "uri": "BestProjectCpp/BestCode.cpp"},
+                "artifactLocation": { "uri": "D:/Missions/Article SARIF/Use_SARIF_Example/BestProjectCpp/BestCode.cpp"},
+                "region": { "startLine": 8, "endLine": 8, "startColumn": 1, "endColumn": 2147483647 }
+              }
+            }
+          ]
+        }
+        ,{
+          "ruleId": "V2542",
+          "message": { "text": "Function with a non-void return type should return a value from all exit paths." },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": { "uri": "D:/Missions/Article SARIF/Use_SARIF_Example/BestProjectCpp/BestCode.cpp"},
                 "region": { "startLine": 8, "endLine": 8, "startColumn": 1, "endColumn": 2147483647 }
               }
             }
