@@ -15,16 +15,9 @@
               ,"properties": { "tags": [ "security", "external/cwe/cwe-480" ] }
             }
             ,{
-              "id": "V511",
-              "name": "Rule V511",
-              "help": { "text": "https://www.viva64.com/en/w/v511/" }
-              ,"properties": { "tags": [ "security", "external/cwe/cwe-467" ] }
-            }
-            ,{
-              "id": "V514",
-              "name": "Rule V514",
-              "help": { "text": "https://www.viva64.com/en/w/v514/" }
-              ,"properties": { "tags": [ "security", "external/cwe/cwe-131" ] }
+              "id": "V763",
+              "name": "Rule V763",
+              "help": { "text": "https://www.viva64.com/en/w/v763/" }
             }
             ,{
               "id": "V591",
@@ -50,30 +43,30 @@
           ]
         }
         ,{
-          "ruleId": "V511",
-          "message": { "text": "The sizeof() operator returns size of the pointer, and not of the array, in 'sizeof (array)' expression." },
+          "ruleId": "V763",
+          "message": { "text": "Parameter 'b' is always rewritten in function body before being used." },
           "level": "error",
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": { "uri": "BestProjectCpp/BestCode.cpp"},
-                "region": { "startLine": 12, "endLine": 12, "startColumn": 1, "endColumn": 2147483647 }
+                "region": { "startLine": 18, "endLine": 18, "startColumn": 1, "endColumn": 2147483647 }
+              }
+            }
+          ]
+          ,"relatedLocations": [
+            {
+              "id": 0,
+              "message": {
+                "text": "The previous declaration of 'index' was here."
+              },
+              "physicalLocation": {
+                "artifactLocation": { "uri": "BestProjectCpp/BestCode.cpp"},
+                "region": { "startLine": 11, "endLine": 11, "startColumn": 1, "endColumn": 2147483647 }
               }
             }
           ]
         }
-        ,{
-          "ruleId": "V514",
-          "message": { "text": "Dividing sizeof a pointer 'sizeof (array)' by another value. There is a probability of logical error presence." },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": { "uri": "BestProjectCpp/BestCode.cpp"},
-                "region": { "startLine": 12, "endLine": 12, "startColumn": 1, "endColumn": 2147483647 }
-              }
-            }
-          ]
         }
         ,{
           "ruleId": "V591",
