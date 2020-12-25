@@ -7,6 +7,17 @@ int main()
     a = a;
 } 
 
+void F(int a)
+{
+    if (a == 6)
+    {
+        if (a == 6)
+        {
+
+        }
+    }
+}
+
 int SkipParenthesize(int a)
 {
     return a * rand() / 100;
