@@ -1,30 +1,16 @@
 #include <iostream>
-
-int main()
+void f(unsigned int ch) 
 {
-    std::cout << "Hello World!\n";
-    int a = 0;
-    a = a;
-} 
-
-void F(int a)
-{
-    if (a == 6)
+    unsigned int chx = -1;
+    if (ch >= 0x0fff0)
     {
-        if (a == 6)
+        if (!((ch >= 0x0FF10) && (ch <= 0x0FF19)) || ((ch >= 0x0FF21) && (ch <= 0x0FF3A)) || ((ch >= 0x0FF41) && (ch <= 0x0FF5A)))
         {
-
+            ch = chx;
         }
     }
 }
-
-int SkipParenthesize(int a)
+int main()
 {
-    return a * rand() / 100;
-}
-
-void ff(int a, int b)
-{
-    a = SkipParenthesize(a);
-    b = SkipParenthesize(a);
+    std::cout << "error" << std::endl;
 }
