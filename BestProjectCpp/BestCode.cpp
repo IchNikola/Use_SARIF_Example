@@ -1,15 +1,23 @@
 #include <iostream>
+void f(unsigned int ch) 
+{
+    unsigned int chx = -1;
+    if (ch >= 0x0fff0)
+    {
+        if (!((ch >= 0x0FF10) && (ch <= 0x0FF19)) || ((ch >= 0x0FF21) && (ch <= 0x0FF3A)) || ((ch >= 0x0FF41) && (ch <= 0x0FF5A)))
+        {
+            ch = chx;
+        }
+    }
+}
+
+int ComputeProjectionMatrixFOV(float fov)
+{
+    float yScale = 1.0 / tan((3.141592538 / 180.0) * fov / 2);
+    return yScale;
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    int a = 0;
-    a = a;
-} 
-
-void ff(float array[3])
-{
-    size_t n = sizeof(array) / sizeof(array[0]);
-    for (size_t i = 0; i != n; i++)
-        array[i] = 1.0f;
+    std::cout << "error" << std::endl;
 }
